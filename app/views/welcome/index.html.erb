@@ -1,0 +1,14 @@
+<h1>MyTasks!</h1>
+
+<% unless notice.nil? %>
+	<%= notice %>
+<% end %>
+
+<p>
+	<%= link_to 'Nova lista'.html_safe,
+						  new_list_path %>
+	<%= link_to 'Nova tarefa'.html_safe,
+							new_task_path %>
+</p>
+
+<%= render @lists %>
